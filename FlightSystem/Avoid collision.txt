@@ -1,0 +1,20 @@
+//Avoid collision - [ KSI ] 03/2024
+V=1000 B=100 C=100
+F=:FcuF :J19=1 if :AV0<1 then :AVO=0 goto3 else :AVO=1 end
+if :ACD<V then :fcuB=B :fcuUD=C :FcuF=0 goto4 end 
+if :ACD==V then :FcuF=F :fcuB=0 :fcuUD=0 end
+if :AV0<1 then goto2 end goto4
+
+
+
+
+
+
+
+
+
+
+
+
+
+

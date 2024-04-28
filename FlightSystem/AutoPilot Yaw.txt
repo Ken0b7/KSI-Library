@@ -1,0 +1,20 @@
+// AutoPilot Yaw - [ KSI ] 04/2024
+:J23=1 if :APA==1 then goto3 else goto2 end
+G=:GX G-=G%1 :FcuY=0
+if G==:DI then goto6 else goto5 end
+if :DI>G then :FcuY=4 end if :DI<G then :FcuY=-4 end 
+:FcuY=0 goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+

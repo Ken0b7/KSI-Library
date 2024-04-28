@@ -1,0 +1,20 @@
+// Miner Screen  - [KSI] 04/2024
+:J49=1 if :MC==4 then :GSZ=15 goto3 else :GSZ=25 goto2 end
+:Y=3 :X=2 :W="\           /" :Y=7 :X=2 :W="/           \"
+:Y=4 :X=3 :W="\         /" :Y=6 :X=3 :W="/         \"
+if :AAM==1 then goto7 else goto6 end
+:Y=5 :X=4 :W="   >X<   " :Y=8 :X=7 :W="    " GOTO2
+if :ADIS<1000 then goto9 else goto8 end
+:Y=5 :X=4 :W="NO TARGET" :W="    " goto2
+:Y=5 :X=4 :W="> FOUND <" :Y=2 :X=10 :W="    " goto2
+
+
+
+
+
+
+
+
+
+
+

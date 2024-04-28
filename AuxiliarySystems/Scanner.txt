@@ -1,0 +1,20 @@
+//Scanner  - [KSI] 02/2023
+ :J31=1 a=100 b=a*1728 s=": " d="\n" 
+ If :Scanner==0 then :AS=d+d+d+"   OFF"+d+"   Scan" goto2 end
+If :Scanner==1 then :AS="\n" goto5 end
+:Scan=1 if :Vol>0 then goto6 else :AS=d+d+d+"Scanning..." goto2 end
+:ind=0 v=:Vol/b*a v-=(v%1) :AS+=:Mat+" "+V+d+d
+:ind=1 v=:Vol/b*a v-=(v%1) :AS+=:Mat+" "+V+d
+
+
+
+
+
+
+
+
+
+
+
+
+

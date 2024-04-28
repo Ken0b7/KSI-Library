@@ -1,0 +1,20 @@
+//FDAI Directional - [KSI] 04/2024
+:J39=1 if :GIV>0 then goto3 end goto2
+:J39=1 if :MC==2 then goto4 end :GIV=0 :Hue=95 goto2
+:mc2=0 k="X0" n="O1" s=13 
+sp=sin -:gx cp=cos -:gx sy=sin :gy cy=cos :gy sr=sin -:gl cr=cos -:gl
+x1=-sy*6 z=cy*6 x=cr*x1 y2=sr*x1 y=cp*y2-sp*z z=sp*y2+cp*z :Hue=1 
+:X=s+x*2 :Y=s+y*2 :W=k+n-(z<0)-k-n 
+if :SS>0 then :K1=1 end goto3
+
+
+
+
+
+
+
+
+
+
+
+//Contributor: Andargor

@@ -1,0 +1,20 @@
+// Sounds - [KSI] 09/2022
+:J32=1
+if :AL1==1 then goto4 else goto8 end
+:SO=1 :C=0 :ST=7 :LA2=1 
+
+
+:SO=1 :C=0 :ST=6 :LA2=0 goto2
+if :AL2==1 then goto9 else goto2 end
+:SO=1 :C=0 :ST=11 :LA2=1
+
+:SO=1 :C=1 :ST=6 :LA2=0 goto2
+
+
+
+
+
+
+
+
+

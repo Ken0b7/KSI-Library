@@ -1,0 +1,20 @@
+// Laser Rotor Model 2  - [KSI] 04/2024
+:J28=1 if :LMD1>0 then goto3 else :DP=30 :COL=0 goto2 end
+if :SPT==1 then :LMD1=0 goto2 end
+:Scanner=0 
+if :LMD1<1 then goto2 end
+:FcuR=100 :DP=:DP-0.1 :COL1=1
+if :DP<0 then :ALMD1=0 goto2 end goto4
+
+
+
+
+
+
+
+
+
+
+
+
+

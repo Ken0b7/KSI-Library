@@ -1,0 +1,20 @@
+// Welcome - [KSI] 04/2024
+A="   ||  // |||||||||||    "
+B="   || //  ||       ||    "
+C="   ||||   ||||||   ||    " E="   ||  \\|||||||   ||    "
+D="   || \\      ||   ||    " F=" |Discord.gg/428aEA2Wxp| "
+G=" Kenobi Space Industries " H="       |Flight OS|       "
+I="                         " J="       \Flight OS/      "
+:J43=1 if :MC==0 then goto9 else goto2 end
+:X=1 :Y=9 :W=A :X=1 :Y=10 :W=B :X=1 :Y=11 :W=C :X=1 :Y=12 :W=D
+:X=1 :Y=13 :W=E :X=1 :Y=16 :W=H
+:X=1 :Y=16 :w=J :X=12 :Y=18 :w="1.7" goto8
+
+
+
+
+
+
+
+
+

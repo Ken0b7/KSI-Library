@@ -1,0 +1,20 @@
+n="\n" S="  " V="Front" T="Back" //Calibrator  - [KSI] 01/2024
+:J26=1 if :ATS<0 then :ATS=0 :SMT=(:SMT-0.5) end 
+if :ATS>0 then :ATS=0 :SMT=(:SMT+0.5) end 
+if :SMT<0 then :SMT=0 end if :SMS<0 then :SMS=0 end
+if :AVM<0 then :AVM=0 :SMS=(:SMS-0.5) end 
+if :AVM>0 then :AVM=0 :SMS=(:SMS+0.5) end
+:Depth=(:MFP1+:MFP2+:MFP3)/3
+:ssm=n+s+s+v+n+s+s+s+:SMS+n+n+s+s+t+n+s+s+s+:SMT goto2
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+// Miner Screen loading  - [KSI] 04/2024
+:J50=1 if :MC==4 then :GSZ=15 goto3 else :GSZ=25 goto2 end
+:Y=11 :X=3 :W="|" :Y=11 :X=13 :W="|" T=:DP
+if T<30 then :Y=9 :X=5 :W="Running" else :Y=9 :X=5 :W="       " end
+if T<28 then :Y=11 :X=4 :W="*" else :Y=11 :X=4 :W="-" end
+if T<27 then :Y=11 :X=5 :W="*" else :Y=11 :X=5 :W="-" end
+if T<23 then :Y=11 :X=6 :W="*" else :Y=11 :X=6 :W="-" end
+if T<19 then :Y=11 :X=7 :W="*" else :Y=11 :X=7 :W="-" end
+if T<15 then :Y=11 :X=8 :W="*" else :Y=11 :X=8 :W="-" end
+if T<11 then :Y=11 :X=9 :W="*" else :Y=11 :X=9 :W="-" end
+if T<7 then :Y=11 :X=10 :W="*" else :Y=11 :X=10 :W="-" end
+if T<3 then :Y=11 :X=11 :W="*" else :Y=11 :X=11 :W="-" end
+if T<0 then :Y=11 :X=12 :W="*" else :Y=11 :X=12 :W="-" end goto2
+
+
+
+
+
+
+

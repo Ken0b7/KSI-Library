@@ -1,0 +1,20 @@
+GOTO1+(:MSR1>0) //Multi-Screen 2 - [KSI] 04/2024
+A=">OFF" B="-ON-" :MHue=180 
+if :VT>0 then :X0=4 :Y0=3 :w0=B else :X0=4 :Y0=3 :w0=a end :JMFD=1
+if :CIE>0 then :X0=11 :Y0=3 :w0=B else :X0=11 :Y0=3 :w0=a end
+if :GR!=0 then :X0=19 :Y0=3 :w0=B else :X0=19 :Y0=3 :w0=a end
+:X0=12 :Y0=22 :w0="|H|" :X0=6 :Y0=22 :w0="|C|" :X0=18 :Y0=22 :w0="|R|"
+if :CSH>100 then :X0=6 :Y0=22 :w0="\C/" end :J46=1
+if :HTR>0 then :X0=12 :Y0=22 :w0="\H/" end
+if :OutH>0 then :X0=18 :Y0=22 :w0="\R/" end goto3
+
+
+
+
+
+
+
+
+
+
+

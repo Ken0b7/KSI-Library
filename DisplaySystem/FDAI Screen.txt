@@ -1,0 +1,20 @@
+//FDAI Screen - [KSI] 04/2024
+A="                         " B="        ROLL ANGLE       "
+C="    - |-----------| +    " L="                     | H "
+H="                    +[ P " I="                     | I "
+J="        /       \    | T " K="                    | C "
+K="       /         \   | C " M="           ] [       |   "
+N="                     | A " O="       \         /   | N "
+P="        \       /    | G " Q="                     | L "
+R="                     | E " S="                    -[   "
+Z="        YAW ANGLE        " :Hue=95
+:J38=1 if :MC==2 then :Hue=95 :KL=2 goto12 else goto2 end
+:X=1 :Y=1 :W=A+B+C+A+A+A+A+H+I+J+K+L+M+N+O+P+Q+R+S+A+A+A+C+Z 
+:KL=0 :GIV==1 :Hue=95
+IF :GIV>0 then goto14 end :KL=2 :K1=0 goto11
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+// Power Regulator  - [KSI] 04/2024
+:J7=1 if :RE==1 then X=(:Cell/100)-50 goto3 else :GRL=100 goto2 end
+:GRL=(100-1.097^X)+0.01 goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

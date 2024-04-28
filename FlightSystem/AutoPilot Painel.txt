@@ -1,0 +1,20 @@
+// AutoPilot Painel - [ KSI ] 04/2024
+:J21=1 if :XD1==1 then :DI++ end if :XD2==1 then :DI-- end 
+if :AI1==1 then :AI++ end if :AI2==1 then :AI-- end 
+if :TD1==1 then :TD++ end if :TD2==1 then :TD-- end
+if :TD<0 then :TD=0 end goto2
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

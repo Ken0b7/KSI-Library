@@ -1,0 +1,20 @@
+// Laser Drill Status  - [KSI] 12/2022
+:J29=1 if :ALMD1==1 then :DGRL=93 :RE=1 else :DGRL=0 end 
+if :DGR<20 then :LMD1=0 end 
+A=:DF1+:DF2+:DF3+:DF4+:DF5+:DF6+:DF7+:DF8+:DF9 C=:DGR c-=c%1
+CGR=A*100/2700000 :ld=v n="\n" P="Power" D="Fuel" S=" " L="|Laser|"
+M=CGR M-=M%1 v=n+s+L+n+n+s+P+s+c+n+n+s+D+s+m goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+

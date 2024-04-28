@@ -1,0 +1,20 @@
+// Alert  - [KSI] 04/2024
+:J10=1 if :ALA==1 then goto3 else :AL1=0 :AL2=0 goto2 end
+if :Cells<40 then :LAE=1 :AL2=1 else :LAE=0 end
+if :Hyd<9 then :LAH=1 :AL2=1 else :LAH=0 end
+if :RFL<9 then :LAR=1 :AL2=1 else :LAR=0 end  
+if :CSH>750 then :LCH=1 :AL2=1 else :LCH=0 end
+if :HTR=0 then :LHR=1 :AL2=1 else :LHR=0 end
+if :Cells<1 then :AL1=1 end if :Fall>0 then :AL2=1 end
+if :ALMD1==1 AND :LMD1==0 then goto10 else goto11 end
+if :AAM==0 then goto14 else goto13 end
+if :ALMD1==1 AND :LMD1==0 then goto12 else goto13 end
+if :Scanner<1 then :AL2=1 else goto13 end 
+if :Hyd<1 OR :RFL<1 then :AL1=1 end
+if :CSH>1499 then :AL1=1 end if :StrengthFactor<1 then :AL1=1 end 
+goto2
+
+
+
+
+

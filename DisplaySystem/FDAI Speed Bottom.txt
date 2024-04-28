@@ -1,0 +1,20 @@
+//FDAI Speed Bottom - [KSI] 04/2024
+C="\/" n="    " :J42=1 if :MC==2 AND :GIV>0 then goto3 end GOTO2
+G=:P4 G-=G%1 if G<=0 then goto4 end :X=2 :Y=16 :W=C+G goto2
+:X=2 :Y=16 :W=n goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

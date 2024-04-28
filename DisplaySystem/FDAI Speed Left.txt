@@ -1,0 +1,20 @@
+//FDAI Speed Left - [KSI] 04/2024
+C="<" n="   " :J47=1 if :MC==2 AND :GIV>0 then goto3 end GOTO2
+G=:P2 G-=G%1 if G<=0 then goto4 end :X=7 :Y=18 :W=C+G goto2
+:X=7 :Y=18 :W=n goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

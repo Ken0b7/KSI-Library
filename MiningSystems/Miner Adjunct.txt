@@ -1,0 +1,20 @@
+//Miner Adjunct  - [KSI] 04/2024
+:J30=1 if :AAM2<1 then :Y=2 :X=7 :W="         " end
+if :MC==4 then :Y=2 :X=7 :W=:ADIS2 end :Y=2 :X=10 :W="        "
+if :ADIS2<6 then goto5 end goto2
+if :ADIS2>0 then :FcuF=0 :FcuB=100 end 
+T++ if T>6 then T=0 :FcuB=0 goto2 end goto6
+
+
+
+
+
+
+
+
+
+
+
+
+
+

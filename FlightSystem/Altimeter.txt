@@ -1,0 +1,20 @@
+// Altimeter - [ KSI ] 04/2024
+:J17=1 n="\n"  S=" " :A=(:AA1+:AA2+:AA3+:AA4)/4 A=:A
+:Altimeter=N+N+N+S+A if :alt==1 then :RAT=1 else :RAT=0 goto2 end
+if :TakeOff==1 then goto2 end if A<2 then :FcuUD=2 else :FcuUD=0 end
+goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+// Speedometer - [ KSI ] 02/2023
+:S=v nl="\n" i="Km/h"  k=:SS*3.6 S=" " k-=k%1 F=:FcuF U="Fu/s" X=" "
+v=nl+s+F+X+U+nl+nl+s+k+X+i :J18=1 GOTO2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

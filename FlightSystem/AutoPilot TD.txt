@@ -1,0 +1,20 @@
+// AutoPilot TD - [ KSI ] 04/2024
+:J22=1 X=1000 if :APA==1 then goto3 else goto2 end
+if :TD>0 then goto 4 else :fcuF=0 goto2 end
+:FcuF=:THH if :AVO>0 then goto5 else goto6 end
+If :ACD<X then :FcuF=0 goto5 else :FcuB=0 goto6 end
+KMS=:SS/1000 Z=:TD-KMS :TD=Z goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+

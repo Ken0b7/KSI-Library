@@ -1,0 +1,20 @@
+//Multi-Screen 1 - [KSI] 10/2022
+A="                         " B="    FV     EG      GR    "
+J="        ] [   ] [        " K="        | |   | |        "
+N="     H2 ] [   ] [ CF     " V="      C     H     R      " 
+:MHue=95 :LW0=0 
+:X0=1 :Y0=1 :W0=A+B+A+A+A+A+A+A+A+J+K+K+K+N+K+K+K+J+A+A+A+V
+:MHue=95 :LW0=2 :MSR1=1
+:J45=1 GOTO8
+
+
+
+
+
+
+
+
+
+
+
+

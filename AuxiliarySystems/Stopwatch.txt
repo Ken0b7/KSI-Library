@@ -1,0 +1,20 @@
+// Stopwatch  - [KSI] 10/2022
+ if :SWT==1 then goto3 else goto7 end
+:TS++ if :TS==59 then :TS=0 :TM++ end if :TM==59 then :TM=0 :TH++ end 
+:Stopwatch=Time SC=:TS MC=:TM HC=:TH nl="\n" m=":" h="   " :J33=1
+Time=nl+nl+nl+H+HC+M+MC+M+SC
+goto2
+:TH=0 :TM=0 :TS=0 sc=0 hc=0 mc=0 :Stopwatch="\n \n \n   0:0:0" 
+:J33=1 goto2
+
+
+
+
+
+
+
+
+
+
+
+

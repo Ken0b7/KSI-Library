@@ -1,0 +1,20 @@
+// Auto-Landing - [ KSI ] 01/2024
+:J14=1 A=1000 B=300 C=100 M=-20 GOTO2+(:AL3>0)
+:ALT=1 if :A==A then goto5 end if :A<B then goto6 end
+if :A>B AND :A<A then goto7 end GOTO2
+IF :SS>80 then :FcuUD=C end goto8
+IF :SS>7 then :FcuUD=C end IF :A<20 then goto9 end goto8
+IF :SS>26 then :FcuUD=C end goto8
+:FcuUD=0 :FcuF=0 if :A>80 THEN :FcuUD=M END goto2
+if :SS<7 then :AL3=0 end goto2
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+//Miner Surface - [KSI] 01/2024
+:J25=1 if :LSD1>0 THEN :RE=0 :MDSP=1 else goto20 end
+A=:MFP1 B=:MFP2 C=:MFP3 if :GR>80 then :LSM1=1 goto4 end goto2 
+T++ if T>55 then goto5 end goto2
+if A>20 OR B>20 then goto7 end if C>20 OR B>20 then goto7 end
+if A<20 OR B<20 then goto8 end if C<20 OR B<20 then goto8 end goto2
+:FcuF=0 :FcuB=:SMS if :LSD1<1 THEN goto9 end goto2
+:FcuB=0 :FcuF=:SMT if :LSD1<1 THEN goto9 end goto2
+:FcuB=0 :FcuF=0  :RE=1 goto2
+
+
+
+
+
+
+
+
+
+
+:LSM1=0 :MDSP=0 T=0 goto2

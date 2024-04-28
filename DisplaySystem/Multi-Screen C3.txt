@@ -1,0 +1,20 @@
+//Multi-Screen C3 - [KSI] 04/2024
+:J54=1 if :Hyd>89 then :GMC9="-" else :GMC9=" " end
+if :Hyd>79 then :GMC8="-" else :GMC8=" " end
+if :Hyd>69 then :GMC7="-" else :GMC7=" " end
+if :Hyd>59 then :GMC6="-" else :GMC6=" " end
+if :Hyd>49 then :GMC5="-" else :GMC5=" " end
+if :Hyd>39 then :GMC4="-" else :GMC4=" " end
+if :Hyd>29 then :GMC3="-" else :GMC3=" " end
+if :Hyd>19 then :GMC2="-" else :GMC2=" " end 
+if :Hyd>9 then :GMC1="-" else :GMC1=" " end GOTO2
+
+
+
+
+
+
+
+
+
+
