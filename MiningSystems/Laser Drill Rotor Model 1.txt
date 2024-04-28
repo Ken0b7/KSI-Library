@@ -1,0 +1,20 @@
+// Laser Drill Rotor Model 1 - [ KSI ] - 12/2022
+:JLDR=1 if :LMD1==1 then :Scanner=0 goto3 else :DP=-15 goto2 end
+if :ARS==0 then :AR=90 end if :ARS==90 then :AR=180 end
+if :ARS==180 then :AR=0 end :DP=:DP+0.1
+if :DP>11 then :DP=-15 :ALMD1=0 end 
+goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+

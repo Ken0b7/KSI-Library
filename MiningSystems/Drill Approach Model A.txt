@@ -1,0 +1,20 @@
+// Drill Approach Model A - [ KSI ] - 03/2024
+N=999 :JDA=1 if :AAM>0 then :Scanner=1 :AAM2=1 goto3 end goto2
+D=:ADIS V=:SS*3.6 if D<1 OR D>N then :FcuF=0 :ALMD1=0 goto1 end  
+if D>200 then goto5 end if D<140 then :ALMD1=1 end goto6 
+if V>58 then A=0 :FcuB=8 else A=20 :FcuB=0 end :FcuF=A goto2
+if V>12 then A=0 :FcuB=8 else A=2 :FcuB=0 end :FcuF=A 
+if D<15 then :FcuF=0 :FcuB=50 goto8 end goto2
+T++ if T>10 then T=0 :FcuB=0 :Scanner=0 goto9 end goto8
+A=:ADIS/64 if :SS==0 THEN :FcuF=0 :FcuB=0 :AAM=0 :LMD1=1 goto2 end
+IF :AAM<1 then :FcuF=0 :FcuB=0 :LMD1=0 goto2 end
+if :ADIS>8 then :FcuF=A :FcuB=0 else :FcuF=0 end
+if :ADIS<6 then :FcuB=4 :FcuF=0 end goto9
+
+
+
+
+
+
+
+
