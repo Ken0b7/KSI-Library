@@ -1,5 +1,5 @@
-// VTOL  - [KSI] 04/2024
-:J4=1 if :TakeOff>0 then :FcuUD=100 end goto1
+// TakeOff  - [KSI] 04/2024
+:J4=1 if :TakeOff>0 then :FcuUD=100 :SAI=0 :AL3=0 end goto1
 
 
 

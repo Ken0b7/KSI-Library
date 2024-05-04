@@ -1,0 +1,20 @@
+F=0.07 //Inertial Damper - [ KSI ] 04/2024
+v=:VSI1 L=:LCSI S=100 G=0 M=:VS2 IF :SAI>0 Then goto3 end goto2
+if :P3>F AND :P3<L then :FcuUD=(:P3+:VSI3)*V goto4 end goto2
+if :P3>M then :FcuUD=S else :FcuUD=G end goto2
+//Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

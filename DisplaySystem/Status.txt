@@ -1,13 +1,13 @@
 //Status - [KSI] 04/2024
 D="|IDM|" W="      " E="<<<" F="|CRU|" C="|GRV|"
-A="|TOF|"
+A="|TOF|" L="|LAN|"
  if :HTR>99 then :RMA=0 else :RMA=1 end  if :Cruze>0 then :FCUF=0 end 
 IF :SAI>0 THEN :X0=11 :Y0=5 :W0=D else :X0=11 :Y0=5 :W0=w end 
 if :CIER<1 then :X0=18 :Y0=21 :W0=E else :X0=18 :Y0=21 :W0=w end
 if :Fall>0 then :X0=3 :Y0=7 :W0=C else :X0=3 :Y0=7 :W0=w end :J44=1
 if :TakeOff>0 then :X0=19 :Y0=5 :W0=A else :X0=19 :Y0=5 :W0=w end 
-if :Cruze>0 then :X0=3 :Y0=5 :W0=F else :X0=3 :Y0=5 :W0=w end goto4
-
+if :Cruze>0 then :X0=3 :Y0=5 :W0=F else :X0=3 :Y0=5 :W0=w end 
+if :AL3>0 then :X0=11 :Y0=7 :W0=L else :X0=11 :Y0=7 :W0=w end goto4
 
 
 

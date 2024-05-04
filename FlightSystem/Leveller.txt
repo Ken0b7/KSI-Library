@@ -1,12 +1,12 @@
 // Leveller - [ KSI ] 04/2024
-V=16 Z=0.8 :J16=1 if :alt2>0 then goto3 else goto2 end
+V=16 Z=0.8 :J16=1 A=:FLP1 C=:FLR1
+if :alt2>0 then goto4 else goto2 end
 F=(:AA1+:AA2)/2 B=(:AA3+:AA4)/2 D1=F-B D2=B-F
-if D1>Z AND D1<V then :FcuP=-4 else :FcuP=0 end
-if D2>Z AND D2<V then :FcuP=4 else :FcuP=0 end
+if D1>Z AND D1<V then :FcuP=A*-1 else :FcuP=0 end
+if D2>Z AND D2<V then :FcuP=A else :FcuP=0 end
 L=(:AA1+:AA3)/2 R=(:AA2+:AA4)/2 D3=L-R D4=R-L
-if D3>Z AND D3<V then :FcuR=-8 else :FcuR=0 end
-if D4>Z AND D4<V then :FcuR=8 else :FcuR=0 end goto2
-
+if D3>Z AND D3<V then :FcuR=C*-1 else :FcuR=0 end
+if D4>Z AND D4<V then :FcuR=C else :FcuR=0 end goto3
 
 
 
