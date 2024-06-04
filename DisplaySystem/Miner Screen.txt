@@ -5,7 +5,7 @@
 if :AAM==1 then goto7 else goto6 end
 :Y=5 :X=4 :W="   >X<   " :Y=8 :X=7 :W="    " GOTO2
 if :ADIS<1000 then goto9 else goto8 end
-:Y=5 :X=4 :W="NO TARGET" :W="    " goto2
+:Y=5 :X=4 :W="NO TARGET" goto2
 :Y=5 :X=4 :W="> FOUND <" :Y=2 :X=10 :W="    " goto2
 
 

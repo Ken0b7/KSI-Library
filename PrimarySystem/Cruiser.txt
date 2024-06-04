@@ -1,0 +1,6 @@
+//Cruiser - [KSI] 05/2024
+:J5=1 if :Cruze>0 then :FCUF=0 :SAI=1 end goto2
+
+
+
+
