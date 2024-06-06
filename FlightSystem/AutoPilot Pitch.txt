@@ -1,6 +1,6 @@
 // AutoPilot Pitch - [ KSI ] 04/2024
-:J24=1 if P=:APP1 :APA==1 then goto3 else goto2 end
-Y=:GY+2 Z=:GY-2 G=:GY G-=G%1 :FcuP=0
+:J24=1 P=:APP1 if :APA>0 then goto3 end goto2
+G=:GX G-=G%1 :FcuP=0 
 if G==:AI then goto6 else goto5 end
 if :AI>G then :FcuP=P end if :AI<G then :FcuP=P*-1 end 
 :FcuP=0 goto2
