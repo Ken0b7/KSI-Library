@@ -1,4 +1,4 @@
-//Fuel Time - [ KSI ] 11/2022
+//Power and Fuel Time «| KSI | © 11/2022
 :J20=1 a=1000 b=60 c=3600 RT="inf" RT=:FCT/(R-:FCT) R=:FCT
 h=RT/c/a*a m=(RT-h*c)/b/a*a s=(RT-h*c-m*b)/a*a RT=h+":"+m+":"+s
 PT="inf" PT=:GASN/(P-:GASN) P=:GASN

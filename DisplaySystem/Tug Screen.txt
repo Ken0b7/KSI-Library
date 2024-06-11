@@ -1,0 +1,15 @@
+//Tug Screen - [ KSI ] 06/2024
+:J51=1 if :MC==6 then :GSZ=15 goto3 end goto2
+A="               " C="   -Loading-   " L="  - Loading -  "
+J="    [Fixed]    " E="   \       /   " F="    \     /    "
+G="      -x-      " H="    /     \    " I="   /       \   "
+:x=1 :y=5 :W=e :x=1 :y=6 :W=f :x=1 :y=10 :W=h P=:MR5/1000000
+:x=1 :y=11 :W=i if :Tug>0 then :DR8-=(:DR8%1) :x=7 :y=4 :W=:DR8 end
+if :GR>99 then :x=5 :y=13 :W=P :x=11 :y=13 :W="Kt" goto10 end
+if :RE<1 THEN :x=1 :y=8 :W=l goto11 else :x=1 :y=8 :W=g end goto2
+if :TBS3>0 THEN :x=1 :y=8 :W=j else :x=1 :y=8 :W=G end goto2
+:x=1 :y=8 :W=c :x=1 :y=13 :W=a goto2
+
+
+
+
