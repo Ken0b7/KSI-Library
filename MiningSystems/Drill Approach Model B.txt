@@ -1,5 +1,5 @@
 F=200 N=999 //Drill Approach Model B - [KSI] 04/2024
-:J27=1 if :AAM>0 then :Scanner=1 :AAM2=1 goto3 end goto2
+:J27=1 if :AAM>0 then :Scanner=1 :Cruze=0 :AAM2=1 goto3 end goto2
 D=:ADIS V=:SS*3.6 if D<1 OR D>N then :FcuF=0 :ALMD1=0 goto1 end
 if D>F then GOTO5 end if D<F then GOTO6 end goto3
 if V>50 then A=0 else A=30 end :FcuF=A if D<N then :ALMD1=1 end goto2

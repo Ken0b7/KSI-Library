@@ -1,10 +1,9 @@
-C=100 T=10000 L=:CCM*12 //Rate «| KSI | © 04/2024
+C=100 T=10000 L=:CCM*12 //Rate - [KSI] 04/2024
 :J1=1 :Hyd=(:GASN*100)/:GASM :Hyd-=(:Hyd%1) 
 :StoredHeat=(:HSH*C)/:HSHM :Reactor=:GR :HDR=(:OutH*C)/1500
-:RFL=(:FCT*C)/L :RFL-=(:RFL%1) :Cells=(:Cell*C)/T
-:FCT=:F1+:F2+:F3+:F4+:F5+:F6+:F7+:F8+:F9+:F10+:F11+:F12 
-if :FCT==0 then :RFL=0 end :EmergencyPower=(:EE*C)/T goto2 
-
+:RFL=(FCT*C)/L :RFL-=(:RFL%1) :Cells=(:Cell*C)/T
+if FCT==0 then :RFL=0 end :EmergencyPower=(:EE*C)/T 
+FCT=:F1+:F2+:F3+:F4+:F5+:F6+:F7+:F8+:F9+:F10+:F11+:F12 goto1
 
 
 

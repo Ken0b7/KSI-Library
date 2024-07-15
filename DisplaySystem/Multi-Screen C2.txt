@@ -1,13 +1,13 @@
 //Multi-Screen C2 - [KSI] 04/2024
 :J53=1 if :RFL>89 then :GCF9="-" else :GCF9=" " end
-if :RFL>79 then :GCF8="-" else :GCF8=" " end
-if :RFL>69 then :GCF7="-" else :GCF7=" " end
-if :RFL>59 then :GCF6="-" else :GCF6=" " end
-if :RFL>49 then :GCF5="-" else :GCF5=" " end
-if :RFL>39 then :GCF4="-" else :GCF4=" " end
-if :RFL>29 then :GCF3="-" else :GCF3=" " end
-if :RFL>19 then :GCF2="-" else :GCF2=" " end
-if :RFL>9 then :GCF1="-" else :GCF1=" " end GOTO2
+if :RFL>78 then :GCF8="-" else :GCF8=" " end
+if :RFL>68 then :GCF7="-" else :GCF7=" " end
+if :RFL>58 then :GCF6="-" else :GCF6=" " end
+if :RFL>48 then :GCF5="-" else :GCF5=" " end
+if :RFL>38 then :GCF4="-" else :GCF4=" " end
+if :RFL>28 then :GCF3="-" else :GCF3=" " end
+if :RFL>18 then :GCF2="-" else :GCF2=" " end
+if :RFL>8 then :GCF1="-" else :GCF1=" " end GOTO2
 
 
 

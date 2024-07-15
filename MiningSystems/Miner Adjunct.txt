@@ -1,7 +1,7 @@
 //Miner Adjunct  - [KSI] 04/2024
 :J30=1 if :AAM2<1 then :Y=2 :X=7 :W="         " end
-if :MC==4 then :Y=2 :X=7 :W=:ADIS2 end :Y=2 :X=10 :W="        " 
-if :AAM<1 then goto2 end :FcuB=0
+if :MC==4 then :Y=2 :X=7 :W=W end :Y=2 :X=10 :W="        " 
+if :AAM<1 then W=:ADIS2 goto2 end :FcuB=0 W=:ADIS
 
 if :ADIS<999 then :SO=1 :C=0 :ST=2 end 
 if :ADIS>500 then goto2 end D=:ADIS L=D*0.1 V=:SS*3.6
