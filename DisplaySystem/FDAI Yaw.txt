@@ -1,0 +1,5 @@
+//FDAI Yaw [KSI] - 11/2024
+:J40=1 if :GIV>0 then Y=22 goto3 end goto2
+if :MC==2 then G=:ggy g-=(g%1)  N="  " goto4 end :GIV=0 :Hue=95 goto2
+A=g+1 B=g+2 C=g-1 D=g-2 :X=12 :Y=20 :W=G+N :X=6 :Y=22 :W=C+N
+:X=17 :Y=22 :W=A+N :X=21 :Y=24 :W=B+N :X=3 :Y=24 :W=D+N goto3

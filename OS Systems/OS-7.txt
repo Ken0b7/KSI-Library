@@ -1,0 +1,20 @@
+
+
+IF :MA>0 then :MC++ :MA=0 goto5 end 
+IF :MB>0 then :MC-- :MB=0 goto6 end goto3
+T++ :K1=1 :KL=0 if T>7 then :MC++ T=0 goto3 end goto5
+T++ :K1=1 :KL=0 if T>7 then :MC-- T=0 goto3 end goto6
+
+
+
+
+
+
+
+
+
+
+
+
+
+//OS-7 Utilities KSI - 11/24

@@ -1,0 +1,20 @@
+A="                         " B="                         "
+C="     ---|Data 03|---     " D="     ---|Data 04|---     "
+E="     (Flight System)     " F="     (Flight System)     "
+G="      Descent Sensor   | " H="      Avoid Collision  | "
+I="      Landing          | " J="      FuelTime         | "
+K="      MCAS             | " L="      AP Painel        | "
+M="      Leveller         | " N="      AP Travel Dist   | "
+O="      Altimeter        | " P="      AP Yaw           | "
+Q="      SpeedMeter       | " R="      AP Pitch Roll    | "
+if :MC==-4 then goto11 else goto10 end
+:Hue=40 :X=1 :Y=1 :W=A+A+A+C+E+A+G+I+K+M+O+Q+A+D+F+A+H+J+L+N+P+R
+if :MC!=-4 then goto10 end if :Clear>0 then goto1 end goto12
+
+
+
+
+
+
+
+//OS-3 KSI - 11/24

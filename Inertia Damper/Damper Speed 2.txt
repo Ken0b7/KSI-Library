@@ -1,5 +1,5 @@
 a=598.98 b=89.224 c=10 //Damper Speed - [ KSI ] 01/2024
-:P1=(a*:LSD1-b)/c :P2=(a*:LSE1-b)/c :P3=(a*:LSS1-b)/c goto2
+:P4=(a*:LSI1-b)/c :P5=(a*:LSF1-b)/c :P6=(a*:LSB1-b)/c goto2
 
 
 

@@ -1,0 +1,20 @@
+A="                         " B="                         "
+C="     ---|Data 05|---     " D="     ---|Data 06|---     "
+E="    (Mining Systems)     " F="   (Auxiliary Systems)   "
+G="      Mine Surface     | " H="      Scanner          | "
+I="      Calibrat         | " J="      Sounds           | "
+K="      Drill Approach   | " L="      Stopwatch        | "
+M="      Rotor            | " N="      Miner Time       | "
+O="      Drill Status     | " P="      Empty            | "
+Q="      Mine Adjunct     | " R="      Empty            | "
+if :MC==-6 then goto11 else goto10 end
+:Hue=40 :X=1 :Y=1 :W=A+A+A+C+E+A+G+I+K+M+O+Q+A+D+F+A+H+J+L+N+P+R
+if :MC!=-6 then goto10 end if :Clear>0 then goto1 end goto12
+
+
+
+
+
+
+
+//OS-5 KSI - 11/24

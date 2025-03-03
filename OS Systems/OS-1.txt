@@ -1,0 +1,20 @@
+A="                         " B="                         "
+C="     ---|Data 01|---     " D="     ---|Data 02|---     "
+E="    (Primary System)     " F="    (Secondary System)   "
+G="      Rate             | " H="      Regulator        | "
+I="      Engine Control   | " J="      Doors Control    | "
+K="      Power Check      | " L="      Transponder      | "
+M="      TakeOff          | " N="      Alert            | "
+O="      Cruiser          | " P="      Empty            | "
+Q="      Empty            | " R="      Empty            | "
+if :MC==-2 then goto11 else goto10 end
+:Hue=40 :X=1 :Y=1 :W=A+A+A+C+E+A+G+I+K+M+O+Q+A+D+F+A+H+J+L+N+P+R
+if :MC!=-2 then goto10 end if :Clear>0 then goto1 end goto12
+
+
+
+
+
+
+
+//OS-1 KSI - 11/24

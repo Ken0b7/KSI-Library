@@ -1,6 +1,6 @@
 // Auto-Landing - [ KSI ] 01/2024
 :J14=1 A=1000 C=100 :A=1000
-if :AL3>0 then :ALT=1 :SAI=0 goto4 end goto2
+if :AL3>0 then :ALT=1 :SAI=0 :Cruze=1 goto4 end goto2
 :FcuF=0 L=(:A*0.06)+3 F=((:A*0.02)+4)*-1 if :AL3<1 then goto3 end
 IF :SS>L then V=C else V=F end :FcuUD=V if :A<1 then goto4 end
 if :A<10 then :AL3=0 :SAI=1 end goto4

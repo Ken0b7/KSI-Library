@@ -1,10 +1,10 @@
-// AutoPilot Pitch - [ KSI ] 04/2024
-:J24=1 P=:APP1 if :APA>0 then goto3 end goto2
-G=:GX G-=G%1 :FcuP=0 
-if G==:AI then goto6 else goto5 end
+// AutoPilot Pitch and Roll - [ KSI ] 11/2024
+:J24=1 P=:APP1 RR=:APR1 if :APA>0 then goto3 end goto2
+G=:GGP G-=G%1 :FcuP=0 if G==:AI then goto5 else goto4 end
 if :AI>G then :FcuP=P end if :AI<G then :FcuP=P*-1 end 
-:FcuP=0 goto2
-
+:FcuP=0 R=:GGR R-=R%1 :FcuR=0 if R==:AR then goto7 else goto6 end
+if R>:AR then :FcuR=RR end if R<:AR then :FcuR=RR*-1 end 
+:FcuR=0 goto2
 
 
 

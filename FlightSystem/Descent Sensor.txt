@@ -1,17 +1,20 @@
 //Descent Sensor - [ KSI ] 04/2024
 :J13=1 VIC=0 VFC=0 if :SS>0.5 then goto3 else :Fall=0 GOTO2 end
-if :SPT>0 then goto11 end IF :AL3>0 then goto2 end
-if :FcuF!=0 then :Fall=0 T=0 goto2 end
-if :FcuB!=0 then :Fall=0 T=0 goto2 end 
-if :FcuR!=0 then :Fall=0 T=0 goto2 end 
-if :FcuUD!=0 then :Fall=0 T=0 goto2 end 
-if :FcuP!=0 then :Fall=0 T=0 goto2 end
-if :FcuRL!=0 then :Fall=0 T=0 goto2 end
-if :FcuY!=0 then :Fall=0 T=0 goto2 end
-T++ if T>8 then T=0 goto12 end goto2
-VIC=:SS 
-
-
-
+VIC=:SS IF :AL3>0 then goto2 end if :SPT>0 then goto8 end 
+if :FcuF!=0 then T=0 goto2 end
+if :FcuB!=0 then T=0 goto2 end if :FcuY!=0 then T=0 goto2 end
+if :FcuR!=0 then T=0 goto2 end if :FcuP!=0 then T=0 goto2 end
+if :FcuUD!=0 then T=0 goto2 end :FcuRL!=0 then T=0 goto2 end
+T++ if T>10 then T=0 goto9 end goto2
 VFC=:SS
 IF VIC>=VFC THEN goto2 else :Fall=1 :SAI=1 goto2 end
+
+
+
+
+
+
+
+
+
+

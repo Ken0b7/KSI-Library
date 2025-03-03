@@ -1,4 +1,4 @@
-// Transponder - [KSI] 04/2024
+// Transponder - «| KSI | © 04/2024
 :J9=1
 if :Ping==1 then :Tra=1 goto4 else goto2 end
 :TRAT++

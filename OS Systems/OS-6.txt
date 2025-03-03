@@ -1,0 +1,20 @@
+A="-ON-" B=">OFF" if :MC==-6 then goto2 else goto1 end
+if :J25>0 then :Y=7 :X=2 :W=A else :Y=7 :X=2 :W=B end
+if :J26>0 then :Y=8 :X=2 :W=A else :Y=8 :X=2 :W=B end
+if :J27>0 then :Y=9 :X=2 :W=A else :Y=9 :X=2 :W=B end
+if :J28>0 then :Y=10 :X=2 :W=A else :Y=10 :X=2 :W=B end
+if :J29>0 then :Y=11 :X=2 :W=A else :Y=11 :X=2 :W=B end
+if :J30>0 then :Y=12 :X=2 :W=A else :Y=12 :X=2 :W=B end
+if :J31>0 then :Y=17 :X=2 :W=A else :Y=17 :X=2 :W=B end
+if :J32>0 then :Y=18 :X=2 :W=A else :Y=18 :X=2 :W=B end
+if :J33>0 then :Y=19 :X=2 :W=A else :Y=19 :X=2 :W=B end
+if :J34>0 then :Y=20 :X=2 :W=A else :Y=20 :X=2 :W=B end
+if :J35>0 then :Y=21 :X=2 :W=A else :Y=21 :X=2 :W=B end
+if :J36>0 then :Y=22 :X=2 :W=A else :Y=22 :X=2 :W=B end GOTO1
+
+
+
+
+
+
+//OS-6 KSI - 11/24

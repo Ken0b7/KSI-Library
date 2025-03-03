@@ -1,0 +1,7 @@
+//FDAI Pitch [KSI] - 11/2024
+:J38=1 if :GIV>0 then k=185 J=95 X=22 N="  " goto3 end goto2
+if :MC==2 then g=:GGP g-=(g%1) A=g+1 goto4 end :GIV=0 :Hue=J goto2
+B=g-1 :X=X :Y=10 :W=A+n :X=X :Y=16 :W=B+n :X=20 :Y=13 :W=G+N 
+:Hue=K GOTO3
+
+

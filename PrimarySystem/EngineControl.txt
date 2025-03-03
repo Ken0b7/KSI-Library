@@ -1,9 +1,9 @@
-// EngineControl  - [KSI] 04/2024
-:J2=1 if :SPT==-1 then :LC4=1 else :LC4=0 end
-if :TVS==1 then    :THL=-100  :THH=100   end
-if :TVS==0  then   :THL=-50    :THH=50    end
-if :TVS==-1 then  :THL=-12   :THH=12      end
-if :SPT==1 then goto20 else :CIE=1 end goto2
+// EngineControl  - [KSI] 04/2024 
+:J2=1 A=100 B=50 C=12 if :SPT<0 then :LC4=1 else :LC4=0 end
+if :TVS>0 then :THH=A end if :TVS==0  then :THH=B end
+if :TVS<0 then :THH=C end if :SPT>0 then goto19 else :CIE=1 end goto2
+
+
 
 
 
@@ -16,5 +16,5 @@ if :SPT==1 then goto20 else :CIE=1 end goto2
 
 
 
-
+:AV0=0 :TakeOff=0 :AL3=0 :ALT2=0 :MCAS=0 :APA=0
 :FcuY=0 :FcuF=0 :FcuR=0 :FcuY=0 :FcuUD=0 :FcuRL=0 :FcuB=0 :CIE=0 goto2

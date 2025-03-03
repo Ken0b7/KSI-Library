@@ -1,4 +1,4 @@
-P=5000 //Damper Shutdown - [ KSI ] 01/2024
+P=5000 :JAI=1 //Damper Shutdown - [ KSI ] 10/2024
 IF :EE<P then :CSI1=0 :CSI2=0 goto2 else :CSI1=1 end
 if :SAI>0 then :CSI2=1 else :CSI2=0 end
 IF :SPT>0 THEN goto5 end goto2

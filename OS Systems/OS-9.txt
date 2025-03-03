@@ -1,0 +1,20 @@
+A="                         " B="                         "
+C="     ---|Data 07|---     " D="     ---|Data 08|---     "
+E="    (Display System)     " F="    (Display System)     "
+G="      FDAI Screen      | " H="      Welcome          | "
+I="      FDAI Pitch       | " J="      Status           | "
+K="      FDAI Roll        | " L="      Multi-Screen 1   | "
+M="      FDAI Yaw         | " N="      Multi-Screen 2   | "
+O="      Empty            | " P="      Empty            | "
+Q="      Empty            | " R="      Empty            | "
+if :MC==-8 then goto11 else goto10 end
+:Hue=40 :X=1 :Y=1 :W=A+A+A+C+E+A+G+I+K+M+O+Q+A+D+F+A+H+J+L+N+P+R
+if :MC!=-8 then goto10 end if :Clear>0 then goto1 end goto12
+
+
+
+
+
+
+
+//OS-9 KSI - 11/24
