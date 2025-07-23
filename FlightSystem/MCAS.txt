@@ -1,20 +1,9 @@
-// MCAS - [ KSI ] 12/2023
-:J15=1 U=100 P=:MAS1 if :MCAS>0 then goto3 end PH=:A goto2
-if :AL3>0 then :MCAS=0 end if :SS>0 AND :FcuF>0 then goto4 end goto2
-if :A<PH then :FcuP=P :FcuUD=U end if :MCAS>0 then goto2 end goto3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// MCAS - [ KSI ] 06/2025
+:J15=1 L=630 B=:A F=999 if :MCAS<1 then goto2 end :ALT=1
+if :A<500 OR :A>F then :SAI=0 :FcuF=0 else :FcuF=100 :SAI=1 end
+if :i6<:i5 THEN :FcuP=-3 end if :i6>:i5 THEN :FcuP=3 end
+IF :A<L THEN :FcuUD=99 end IF :A>L THEN :FcuUD=-99 end
+D=B-:A if D>40 then goto7 end goto2
+T++ if T>5 then T=0 goto2 end goto7
 
 

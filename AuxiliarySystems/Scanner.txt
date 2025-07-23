@@ -1,13 +1,13 @@
-//Scanner  - [KSI] 02/2023
- :J31=1 a=100 b=a*1728 s=": " d="\n" 
- If :Scanner==0 then :AS=d+d+d+"   OFF"+d+"   Scan" goto2 end
-If :Scanner==1 then :AS="\n" goto5 end
-:Scan=1 if :Vol>0 then goto6 else :AS=d+d+d+"Scanning..." goto2 end
-:ind=0 v=:Vol/b*a v-=(v%1) :AS+=:Mat+" "+V+d+d
-:ind=1 v=:Vol/b*a v-=(v%1) :AS+=:Mat+" "+V+d
-
-
-
+//Scanner [ KSI ]  07/2025
+:J31=1 if :MC==4 then GOTO3 end goto2
+a=100 b=a*1728 O="Scan OFF"  E="               " T="-" H="|"         
+S="Scanning..." If :Scanner<1 then :X=5 :Y=10 :W=O goto10 end
+:Scan=1 if :Vol>0 then goto6 else :X=4 :Y=10 :W=S goto10 end
+:ind=0 v=:Vol/b*a v-=(v%1) M=:Mat :X=7 :Y=10 :W=t+V+t
+:ind=1 Z=:Vol/b*a Z-=(Z%1) N=:Mat :X=7 :Y=13 :W=t+Z+t
+:X=2 :Y=9 :W=+M :X=2 :Y=12 :W=+N 
+:X=7 :Y=10 :W=H+V+H :X=7 :Y=13 :W=H+Z+H goto2
+:X=2 :Y=9 :W=E :X=2 :Y=12 :W=E :X=2 :Y=10 :W=E :X=2 :Y=13 :W=E goto2
 
 
 

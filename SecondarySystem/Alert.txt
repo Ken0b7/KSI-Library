@@ -1,18 +1,17 @@
-// Alert [KSI] - 10/2024
-if :Cells<20 then :LAE=1 :LAEC=0 :AL2=1 else :LAEC=2 :LAE=0 :AL2=0 end
-if :Hyd<9 then :LAH=1 :LAHC=0 :AL2=1 else :LAHC=2 :LAH=0 :AL2=0 end
-if :RFL<9 then :LAR=1 :LARC=0 :AL2=1 else :LARC=2 :LAR=0 :AL2=0 end
-if :CSH>750 then :LCH=1 :LCHC=0 :AL2=1 else :LCHC=2 :LCH=0 :AL2=0 end
-:J10=1 :L4=1 if :ALA==1 then goto7 else :AL1=0 :AL2=0 goto2 end
-if :Cells<1 then :AL1=1 end if :Fall>0 then :AL2=1 end
+// Alert [KSI] - 07/2025
+if :Cells<20 then :LAE=0 :LAEC=1 A=1 else :LAEC=0 :LAE=2 end
+if :Hyd<9 then :LAH=0 :LAHC=1 A=1 else :LAHC=0 :LAH=2 end
+if :RFL<9 then :LAR=0 :LARC=1 A=1 else :LARC=0 :LAR=2 end
+if :CSH>750 then :LCH=0 :LCHC=1 A=1 else :LCHC=0 :LCH=2 end
+if :Fall>0 then A=1 end
 
-if :ALMD1==1 AND :LMD1==0 then goto10 else goto11 end
-if :AAM==0 then goto14 else goto13 end
-if :ALMD1==1 AND :LMD1==0 then goto12 else goto13 end
-if :Scanner<1 then :AL2=1 else goto13 end 
-if :Hyd<1 OR :RFL<1 then :AL1=1 end
-if :CSH>1499 then :AL1=1 end if :StrengthFactor<1 then :AL1=1 end 
-goto2
+if :Cells<1 then B=1 end if :Hyd<1 OR :RFL<1 then B=1 end
+if :CSH>1400 then B=1 end if :StrengthFactor<1 then B=1 end 
+
+:J10=1 if :ALA>0 then goto12 else A=0 B=0 :AL1=0 :AL2=0 goto2 end
+if B>0 THEN :AL1=1 goto2 end
+if A>0 THEN :AL2=1 goto2 end goto2
+
 
 
 

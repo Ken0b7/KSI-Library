@@ -1,10 +1,10 @@
 // Power Check  - [KSI] 04/2024
 :J3=1 if :Cells<9 then goto3 end :PMA=1 goto5
 :PMA=0 :LSD7=0 :Scanner=0 :AVO=0 :OC1=0 :SPT=1
-if :EE<5000 then :ULK=1 :BCRL=1 :SPT=1 end 
+if :EE<5000 then :ULK=1 :BCRL=1 :SPT=1 end  
 if :CRL==0 then :SPT=1 end if :BCRL>0 then :CRL=100 else :CRL=0 end
 if :Cells>1 then :ULK=0 end if :RFL<9 then :LSD7=0 end 
-if :HTR>99 then :RMA=0 else :RMA=1 end goto2
+if :HSH>1 then :RMA=0 else :RMA=1 end goto2
 
 
 

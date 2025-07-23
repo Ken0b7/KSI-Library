@@ -1,10 +1,10 @@
-P=5000 :JAI=1 //Damper Shutdown - [ KSI ] 10/2024
-IF :EE<P then :CSI1=0 :CSI2=0 goto2 else :CSI1=1 end
-if :SAI>0 then :CSI2=1 else :CSI2=0 end
+P=5000 :JAI=1
+IF :EE<P then :CSI1=0 goto2 end
+if :SAI>0 then :CSI1=1 else :CSI1=0 end
 IF :SPT>0 THEN goto5 end goto2
-:FcuB=0 :FcuRL=0 :FcuUD=0 :CSI1=0 :SAIC=1 :SAIB=1 :CSI2=0 
-IF :SPT<0 THEN goto7 end goto6
-:CSI1=1 :SAIC=3 :SAIB=0 goto2
+:FcuB=0 :FcuRL=0 :FcuUD=0 :FcuF=0 :CSI1=0 :SAIC=1 :SAIB=1
+IF :SPT<0 THEN :SAIC=3 :SAIB=0 goto1 end goto6
+
 
 
 
