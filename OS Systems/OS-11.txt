@@ -1,14 +1,14 @@
 A="                         " B="                         "
 C="     ---|Data 09|---     " D="     ---|Data 10|---     "
 E="    (Display System)     " F="    (Display System)     "
-G="      Miner Screen     | " H="      Empty            | "
-I="      MinerS Loading B | " J="      Empty            | "
-K="      Tug Screen       | " L="      Empty            | "
+G="      Miner Screen     | " H="      Surface Painel 1 | "
+I="      MinerS Loading B | " J="      Surface Painel 2 | "
+K="      Tug Screen       | " L="      Drill Stats      | "
 M="      Multi-Screen C1  | " N="      Empty            | "
 O="      Multi-Screen C2  | " P="      Empty            | "
 Q="      Multi-Screen C3  | " R="      Empty            | "
 if :MC==-10 then goto11 else goto10 end
-:Hue=40:X=1 :Y=1 :W=A+A+A+C+E+A+G+I+K+M+O+Q+A+D+F+A+H+J+L+N+P+R
+:Hue=40 :X=1 :Y=1 :W=A+A+A+C+E+A+G+I+K+M+O+Q+A+D+F+A+H+J+L+N+P+R
 if :MC!=-10 then goto10 end if :Clear>0 then goto1 end goto12
 
 

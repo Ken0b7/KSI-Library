@@ -1,14 +1,13 @@
 // Doors Control  - [KSI] 09/2022
 :J8=1 if :ULK==1 then goto17 end if :LK==1 then goto16 end
-if :Bridge>0 then :D1=1 :D7=180 else :D1=0 :D7=0 end
-if :LX2>0 then :D2=0 goto6 end
+if :LX1>0 then :D1=0 goto5 end
+if :Room>0 then :D1=1 else :D1=0 end
+if :LX2>0 then :D2=0 goto7 end
 if :Room>0 then :D2=1 else :D2=0 end
-if :LX3>0 then :D3=0 goto8 end
-if :Workshop>0 then :D3=1 else :D3=0 end
-if :Hatch>0 then :D4=1 else :D4=0 end
-if :CargoBay>0 then :D5=1 else :D5=0 end 
-if :LX6>0 then :D6=0 goto19 end
-if :Ramp>0 then :D6=1 else :D6=0 end goto19
+if :LX3>0 then :D3=0 goto9 end
+if :Room>0 then :D3=1 else :D3=0 end
+if :LX4>0 then :D4=0 goto19 end
+if :Room>0 then :D4=1 else :D4=0 end goto19
 
 
 

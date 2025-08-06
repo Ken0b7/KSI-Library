@@ -1,0 +1,19 @@
+//Miner Surface Painel 1 - [ KSI ] 06/2024
+:J55=1 if :MT1>0 then :Min=(:Min-10) :MT1=0 end 
+if :MT2>0 then :Min=(:Min+10) :MT2=0 end
+IF :Min>300 then :Min=300 end IF :Min<0 then :Min=0 end goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

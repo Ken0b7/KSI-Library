@@ -1,0 +1,8 @@
+//Surface Time - [ KSI ] 07/2025
+if :LSD7>0 then T=(:Min*60) y=y+1.06 goto3 end y=0 goto2
+
+
+:TimeLeft=(T-y)/60
+if T<1 then :LSD7=0 :RE=1 end goto2
+
+	

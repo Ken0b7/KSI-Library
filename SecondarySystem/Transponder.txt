@@ -1,9 +1,9 @@
-// Transponder - «| KSI | © 04/2024
-:J9=1
-if :Ping==1 then :Tra=1 goto4 else goto2 end
-:TRAT++
-if :TRAT>36 then :Tra=0 :Ping=0 :TRAT=0 goto2 else goto4 end
+// Transponder - [KSI] - 08/2025
+:J9=1 if :Ping>0 then :Tra=1 y=y+1.06 goto3 END GOTO2
 
+
+
+if y>=10 then y=0 :Tra=0 :Ping=0 end goto2
 
 
 

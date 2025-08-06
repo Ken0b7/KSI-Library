@@ -1,9 +1,19 @@
-// MCAS - [ KSI ] 06/2025
-:J15=1 L=630 B=:A F=999 if :MCAS<1 then goto2 end :ALT=1
-if :A<500 OR :A>F then :SAI=0 :FcuF=0 else :FcuF=100 :SAI=1 end
-if :i6<:i5 THEN :FcuP=-3 end if :i6>:i5 THEN :FcuP=3 end
-IF :A<L THEN :FcuUD=99 end IF :A>L THEN :FcuUD=-99 end
-D=B-:A if D>40 then goto7 end goto2
-T++ if T>5 then T=0 goto2 end goto7
+L=600 Z=1000 P=0.06 U=0.02 c=-100 //MCAS - [KSI] 08/2025
+:J15=1 if :MCAS<1 then goto1 end :ALT=1 y=y+1.06 :Cruze=1 :SAI=1
+S=0.9*S+0.1*:a h=l-s D=:i6-:i5 B=d*P+h*U :FcuP=B :FcuF=:a*0.2 
+IF :A>L then :FcuUD=C end IF :A<L then :FcuUD=4 end 
+
+if :TD<=0 then goto10 end if y>=1 then y=0 :TD-=:SS/Z end goto2
+
+
+
+:FcuF=0 :MCAS=0 :SAI=1 goto1
+
+
+
+
+
+
+
 
 

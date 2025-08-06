@@ -1,14 +1,14 @@
-// EngineControl  - [KSI] 04/2024 
+// EngineControl  - [KSI] 07/2025 
 :J2=1 A=100 B=50 C=12 if :SPT<0 then :LC4=1 else :LC4=0 end
-if :TVS>0 then :THH=A end if :TVS==0  then :THH=B end
-if :TVS<0 then :THH=C end if :SPT>0 then goto18 else goto6 end goto2
+if :TVS>0 then :THH=A end if :TVS==0 then :THH=B goto10 end
+if :TVS<0 then :THH=C goto11 end
+if :SPT>0 then goto18 else goto7 end 
 
 :CIE=1 :GridDisplayOnState=1 :LL4=1 goto2
 
 
-
-
- 
+if :FcuF>B then :FcuF=B end goto5
+if :FcuF>C then :FcuF=C end goto5
 
 
 

@@ -1,20 +1,4 @@
-// Speedometer - [ KSI ] 02/2023
-:S=v nl="\n" i="Km/h"  k=:SS*3.6 S=" " k-=k%1 F=:FcuF U="Fu/s" X=" "
-v=nl+s+F+X+U+nl+nl+s+k+X+i :J18=1 GOTO2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Speedometer [KSI]  07/2025
+:J18=1 nl="\n" i="Km/h" S=" " F=:FcuF U="Fu/s" a=0.9*a+0.1*:SS
+K=a*3.6 K-=K%1 v=nl+s+F+s+U+nl+nl+s+k+s+i :S=v GOTO2
 

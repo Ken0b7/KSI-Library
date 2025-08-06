@@ -1,5 +1,5 @@
 // Power Regulator - [KSI] 04/2024
-:J7=1 A=100 B=50 C=1.097 D=0.01
+:J10=1 A=100 B=50 C=1.097 D=0.01
 if :RE>0 then X=(:Cell/A)-B :GRL=(A-C^X)+D goto2 end
 :GRL=A GOTO2
 

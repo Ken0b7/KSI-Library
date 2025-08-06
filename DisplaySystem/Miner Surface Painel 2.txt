@@ -1,4 +1,4 @@
-n="\n" S="  " V="Front" T="Back" //Calibrator  - [KSI] 01/2024
+n="\n" S="  " V="Front" T="Back" //Miner Surface Painel 2 - [ KSI ]
 :J26=1 if :ATS<0 then :ATS=0 :SMT=(:SMT-0.5) end 
 if :ATS>0 then :ATS=0 :SMT=(:SMT+0.5) end 
 if :SMT<0 then :SMT=0 end if :SMS<0 then :SMS=0 end

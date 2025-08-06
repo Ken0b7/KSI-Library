@@ -1,6 +1,6 @@
 //Cruiser - [ KSI ] 06/2025
-:J5=1 if :Cruze>0 THEN :CFB=0 else :CFB=100 end GOTO2
-
+:J5=1 if :Cruze>0 THEN :CFB=0 else :CFB=100 GOTO3 end GOTO2
+:FcuF=0 :FcuB=0 goto2
 
 
 

@@ -1,7 +1,7 @@
-v=0.65 L=:LCSI s=100 G=0 M=29 F=0.07 //Inertial Damper - KSI 06/25
-if :Cruze<1 then :FcuB=G end IF :SAI>0 Then goto3 end goto1
-IF :FcuF>0 then goto1 end if :SS>M then :FcuB=S else :FcuB=G end
-if :P5>F AND :P5<L then :FcuB=(:P5+2)*v goto3 end goto1
+//Inertial Damper - [ KSI ] 04/2024
+v=0.65 L=:LCSI s=100 G=0 M=29 IF :SAI>0 Then goto3 end goto2
+IF :FcuF>0 then goto2 end if :SS>M then :FcuB=S else :FcuB=G end
+F=:LDIP if :P5>F AND :P5<L then :FcuB=(:P5+2)*v goto3 end goto2
 //Back
 
 
